@@ -1,7 +1,7 @@
 # Análise de Espectroscopia com Machine Learning
 
 ## Descrição do Projeto
-Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade de uva utilizando técnicas de machine learning para identificar padrões e prever atributos de qualidade como SST (Sólidos Solúveis Totais), AT (Acidez Total), pH, Firmeza e UBS (Umidade da Baga Seca). O pipeline é organizado em pastas específicas para cada etapa do processo incluindo, pré-processamento dos dados, redução de dimensionalidade com PCA, seleção de amostras com o método Kennard-Stone e aplicação de modelos como PCR, PLSR, Random Forest, SVR e MLP.
+Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade de uva utilizando técnicas de machine learning para identificar padrões e prever atributos de qualidade como SST (Sólidos Solúveis Totais), AT (Acidez Total), pH, Firmeza e UBS (Umidade da Baga Seca). O pipeline é organizado em pastas específicas para cada etapa do processo incluindo, pré-processamento dos dados, redução de dimensionalidade com PCA, seleção de amostras com o método Kennard-Stone, método Jackknife para seleção de componentes e aplicação de modelos como PCR, PLSR, Random Forest, SVR e MLP.
 
 ## Funcionalidades
 - **Pré-processamento**: Normalização e padronização dos dados espectroscópicos.
@@ -26,17 +26,18 @@ Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade
 3. **Abra o arquivo Jupyter de cada pasta e execute para visualizar os resultados.**
 
 ## Estrutura do projeto
-
+```
 /ML-spectroscopy-analysis
 │
-├── /Data                                       # Dados brutos
-├── /Principal Components Analysis              # Análise de Componentes Principais (PCA)
-├── /Pre-processing                             # Pré-processamento dos dados
-├── /Principal Components Regression            # Regressão por Componentes Principais (PCR)
-├── /Processed                                  # Dados processados
-├── .gitignore                                  # Arquivo para ignorar arquivos desnecessários
-├── README.md                                   # Documentação do projeto
-└── requirements.txt                            # Dependências do projeto
+├── /Data                          # Dados brutos
+├── /Principal_Components_Analysis  # Análise de Componentes Principais (PCA)
+├── /Pre-processing                 # Pré-processamento dos dados
+├── /Principal_Components_Regression # Regressão por Componentes Principais (PCR)
+├── /Processed                      # Dados processados
+├── .gitignore                      # Arquivo para ignorar arquivos desnecessários
+├── README.md                       # Documentação do projeto
+└── requirements.txt                # Dependências do projeto
+```
 
 ## Licença
 
@@ -45,7 +46,7 @@ Este projeto está licenciado sob a [MIT License](https://choosealicense.com/lic
 ## Contato
 Se tiver dúvidas ou sugestões, entre em contato:
 
-Nome: [@Andressa](https://www.linkedin.com/in/andressa-carvalho-6b09b2312/)
+Nome: [Andressa](https://www.linkedin.com/in/andressa-carvalho-6b09b2312/)
 
 Email: [acarvalho0710@gmail.com]
 
