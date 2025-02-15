@@ -29,14 +29,14 @@ Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade
 ```
 /ML-spectroscopy-analysis
 │
-├── /Data                          # Dados brutos
-├── /Principal_Components_Analysis  # Análise de Componentes Principais (PCA)
-├── /Pre-processing                 # Pré-processamento dos dados
-├── /Principal_Components_Regression # Regressão por Componentes Principais (PCR)
-├── /Processed                      # Dados processados
-├── .gitignore                      # Arquivo para ignorar arquivos desnecessários
-├── README.md                       # Documentação do projeto
-└── requirements.txt                # Dependências do projeto
+├── /Data                                       # Dados brutos
+├── /Principal_Components_Analysis              # Análise de Componentes Principais (PCA)
+├── /Pre-processing                             # Pré-processamento dos dados
+├── /Principal_Components_Regression            # Regressão por Componentes Principais (PCR)
+├── /Processed                                  # Dados processados
+├── .gitignore                                  # Arquivo para ignorar arquivos desnecessários
+├── README.md                                   # Documentação do projeto
+└── requirements.txt                            # Dependências do projeto
 ```
 
 ## Licença
