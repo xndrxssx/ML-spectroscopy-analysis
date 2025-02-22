@@ -31,9 +31,12 @@ Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade
 │
 ├── /Data                                       # Dados brutos
 ├── /Principal_Components_Analysis              # Análise de Componentes Principais (PCA)
+├── /Partial_Least_Squares_Regression           # Regressão por Mínimos Quadrados Parciais (PLSR)
 ├── /Pre-processing                             # Pré-processamento dos dados
 ├── /Principal_Components_Regression            # Regressão por Componentes Principais (PCR)
 ├── /Processed                                  # Dados processados
+├── /Random_Forest_Regressor                    # Regressão por Florestas Aleatórias (RFR)
+├── /Support_Vector_Machine_Regression          # Regressão por Máquinas de Vetores de Suporte (SVMR)
 ├── .gitignore                                  # Arquivo para ignorar arquivos desnecessários
 ├── README.md                                   # Documentação do projeto
 └── requirements.txt                            # Dependências do projeto
