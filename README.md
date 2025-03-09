@@ -30,6 +30,7 @@ Este projeto tem como objetivo analisar dados de espectroscopia de uma variedade
 /ML-spectroscopy-analysis
 │
 ├── /Data                                       # Dados brutos
+├── /Multilayer_Perceptron_Regression           # Regressão com Multilayer Perceptron (MLPR)
 ├── /Principal_Components_Analysis              # Análise de Componentes Principais (PCA)
 ├── /Partial_Least_Squares_Regression           # Regressão por Mínimos Quadrados Parciais (PLSR)
 ├── /Pre-processing                             # Pré-processamento dos dados
