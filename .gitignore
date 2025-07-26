@@ -1,3 +1,4 @@
 # Ignorar arquivos de ambiente virtual
 venv/
 .env
+.ipynb_checkpoints
