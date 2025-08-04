@@ -1,0 +1,572 @@
+================================================================================
+7.1 MODELAGEM - MULTI-LAYER PERCEPTRON REGRESSOR (MLPR) - TODOS OS FILTROS
+================================================================================
+
+============================================================
+MLPR PARA AT
+============================================================
+
+--- MLPR com filtro: Raw ---
+  CV R²: -0.1828 ± 0.4166
+  Val R²: -0.0460, RMSE: 0.6738
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC ---
+  CV R²: -0.1847 ± 0.4150
+  Val R²: -0.0460, RMSE: 0.6738
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV ---
+  CV R²: 0.0449 ± 0.1575
+  Val R²: -0.0514, RMSE: 0.6755
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D1 ---
+  CV R²: -0.1603 ± 0.1647
+  Val R²: -0.0852, RMSE: 0.6863
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D2 ---
+  CV R²: -0.1742 ± 0.1626
+  Val R²: -0.0819, RMSE: 0.6852
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Detrend ---
+  CV R²: -0.1628 ± 0.3854
+  Val R²: -0.0683, RMSE: 0.6809
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Normalize ---
+  CV R²: -0.2183 ± 0.3624
+  Val R²: -0.0481, RMSE: 0.6744
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: EMSC ---
+  CV R²: -0.1847 ± 0.4150
+  Val R²: -0.0460, RMSE: 0.6738
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Continuum_Removal ---
+  CV R²: -0.1709 ± 0.2395
+  Val R²: -0.0489, RMSE: 0.6747
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Wavelet_Denoising ---
+  CV R²: -0.1836 ± 0.4163
+  Val R²: -0.0460, RMSE: 0.6738
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_1 ---
+  CV R²: 0.2737 ± 0.2041
+  Val R²: 0.0329, RMSE: 0.6479
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_2 ---
+  CV R²: 0.2333 ± 0.2417
+  Val R²: 0.0949, RMSE: 0.6267
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC_SG_OSC ---
+  CV R²: -0.0571 ± 0.3279
+  Val R²: -0.0572, RMSE: 0.6774
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS1_SNV_SG_D1 ---
+  CV R²: 0.0143 ± 0.4561
+  Val R²: -0.0570, RMSE: 0.6773
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: 0.2846 ± 0.1923
+  Val R²: 0.1918, RMSE: 0.5923
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: -0.1250 ± 0.1319
+  Val R²: -0.0497, RMSE: 0.6750
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+============================================================
+MLPR PARA FIRMEZA (N)
+============================================================
+
+--- MLPR com filtro: Raw ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9580
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9580
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9583
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D1 ---
+  CV R²: -34.8957 ± 11.3917
+  Val R²: -27.2496, RMSE: 517.9441
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D2 ---
+  CV R²: -34.8951 ± 11.3915
+  Val R²: -27.2491, RMSE: 517.9397
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Detrend ---
+  CV R²: -34.8976 ± 11.3923
+  Val R²: -27.2510, RMSE: 517.9571
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Normalize ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9583
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: EMSC ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9580
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Continuum_Removal ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9583
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Wavelet_Denoising ---
+  CV R²: -34.8977 ± 11.3923
+  Val R²: -27.2511, RMSE: 517.9580
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_1 ---
+  CV R²: -34.8950 ± 11.3914
+  Val R²: -27.2490, RMSE: 517.9385
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_2 ---
+  CV R²: -34.8950 ± 11.3914
+  Val R²: -27.2490, RMSE: 517.9389
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC_SG_OSC ---
+  CV R²: -34.8954 ± 11.3916
+  Val R²: -27.2493, RMSE: 517.9417
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS1_SNV_SG_D1 ---
+  CV R²: -34.8955 ± 11.3916
+  Val R²: -27.2493, RMSE: 517.9420
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: -34.8951 ± 11.3915
+  Val R²: -27.2491, RMSE: 517.9396
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: -34.8972 ± 11.3922
+  Val R²: -27.2507, RMSE: 517.9544
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+============================================================
+MLPR PARA PH
+============================================================
+
+--- MLPR com filtro: Raw ---
+  CV R²: -7.6471 ± 3.5055
+  Val R²: -5.8065, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC ---
+  CV R²: -7.6471 ± 3.5056
+  Val R²: -5.8065, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV ---
+  CV R²: -7.6470 ± 3.5055
+  Val R²: -5.8064, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D1 ---
+  CV R²: -7.6268 ± 3.4979
+  Val R²: -5.7908, RMSE: 0.6784
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D2 ---
+  CV R²: -7.6185 ± 3.4951
+  Val R²: -5.7842, RMSE: 0.6781
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Detrend ---
+  CV R²: -7.6474 ± 3.5056
+  Val R²: -5.8067, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Normalize ---
+  CV R²: -7.6471 ± 3.5055
+  Val R²: -5.8064, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: EMSC ---
+  CV R²: -7.6471 ± 3.5056
+  Val R²: -5.8065, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Continuum_Removal ---
+  CV R²: -7.6470 ± 3.5055
+  Val R²: -5.8064, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Wavelet_Denoising ---
+  CV R²: -7.6471 ± 3.5055
+  Val R²: -5.8065, RMSE: 0.6792
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_1 ---
+  CV R²: -7.6186 ± 3.4949
+  Val R²: -5.7825, RMSE: 0.6780
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_2 ---
+  CV R²: -7.6184 ± 3.4947
+  Val R²: -5.7827, RMSE: 0.6780
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC_SG_OSC ---
+  CV R²: -7.6264 ± 3.4980
+  Val R²: -5.8203, RMSE: 0.6799
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS1_SNV_SG_D1 ---
+  CV R²: -7.6430 ± 3.5040
+  Val R²: -25.3104, RMSE: 1.3354
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: -7.6195 ± 3.4951
+  Val R²: -5.7839, RMSE: 0.6781
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: -7.6440 ± 3.5044
+  Val R²: -5.8041, RMSE: 0.6791
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+============================================================
+MLPR PARA SST
+============================================================
+
+--- MLPR com filtro: Raw ---
+  CV R²: -22.1155 ± 4.8193
+  Val R²: -19.3100, RMSE: 11.1202
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC ---
+  CV R²: -22.1155 ± 4.8193
+  Val R²: -19.3100, RMSE: 11.1202
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV ---
+  CV R²: -22.1163 ± 4.8194
+  Val R²: -19.3107, RMSE: 11.1204
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D1 ---
+  CV R²: -22.0684 ± 4.8101
+  Val R²: -19.2676, RMSE: 11.1086
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D2 ---
+  CV R²: -22.0532 ± 4.8071
+  Val R²: -19.2540, RMSE: 11.1049
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Detrend ---
+  CV R²: -22.1122 ± 4.8186
+  Val R²: -19.3070, RMSE: 11.1194
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Normalize ---
+  CV R²: -22.1163 ± 4.8194
+  Val R²: -19.3107, RMSE: 11.1204
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: EMSC ---
+  CV R²: -22.1155 ± 4.8193
+  Val R²: -19.3100, RMSE: 11.1202
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Continuum_Removal ---
+  CV R²: -22.1162 ± 4.8194
+  Val R²: -19.3106, RMSE: 11.1204
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Wavelet_Denoising ---
+  CV R²: -22.1155 ± 4.8193
+  Val R²: -19.3100, RMSE: 11.1202
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_1 ---
+  CV R²: -22.0527 ± 4.8068
+  Val R²: -19.2534, RMSE: 11.1047
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_2 ---
+  CV R²: -22.0527 ± 4.8069
+  Val R²: -19.2532, RMSE: 11.1047
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC_SG_OSC ---
+  CV R²: -22.0554 ± 4.8073
+  Val R²: -19.2558, RMSE: 11.1054
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS1_SNV_SG_D1 ---
+  CV R²: -22.0573 ± 4.8075
+  Val R²: -19.2572, RMSE: 11.1058
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: -22.0530 ± 4.8070
+  Val R²: -19.2535, RMSE: 11.1047
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: -22.1029 ± 4.8168
+  Val R²: -19.2987, RMSE: 11.1171
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+============================================================
+MLPR PARA UBS (%)
+============================================================
+
+--- MLPR com filtro: Raw ---
+  CV R²: -24.0743 ± 6.9200
+  Val R²: -20.6754, RMSE: 12.2183
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC ---
+  CV R²: -24.0744 ± 6.9200
+  Val R²: -20.6755, RMSE: 12.2183
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV ---
+  CV R²: -24.0751 ± 6.9202
+  Val R²: -20.6761, RMSE: 12.2185
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D1 ---
+  CV R²: -24.0274 ± 6.9082
+  Val R²: -20.6336, RMSE: 12.2065
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SG_D2 ---
+  CV R²: -24.0123 ± 6.9043
+  Val R²: -20.6201, RMSE: 12.2027
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.1, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Detrend ---
+  CV R²: -24.0711 ± 6.9192
+  Val R²: -20.6725, RMSE: 12.2175
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Normalize ---
+  CV R²: -24.0752 ± 6.9203
+  Val R²: -20.6762, RMSE: 12.2185
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: EMSC ---
+  CV R²: -24.0744 ± 6.9200
+  Val R²: -20.6755, RMSE: 12.2183
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Continuum_Removal ---
+  CV R²: -24.0751 ± 6.9202
+  Val R²: -20.6761, RMSE: 12.2185
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: Wavelet_Denoising ---
+  CV R²: -24.0743 ± 6.9200
+  Val R²: -20.6754, RMSE: 12.2183
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_1 ---
+  CV R²: -24.0119 ± 6.9042
+  Val R²: -20.6193, RMSE: 12.2025
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OSC_2 ---
+  CV R²: -24.0116 ± 6.9041
+  Val R²: -20.6191, RMSE: 12.2024
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: MSC_SG_OSC ---
+  CV R²: -24.0161 ± 6.9054
+  Val R²: -20.6234, RMSE: 12.2036
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS1_SNV_SG_D1 ---
+  CV R²: -24.0195 ± 6.9064
+  Val R²: -20.6261, RMSE: 12.2044
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: -24.0122 ± 6.9041
+  Val R²: -20.6195, RMSE: 12.2025
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+--- MLPR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: -24.0618 ± 6.9169
+  Val R²: -20.6643, RMSE: 12.2151
+  Melhores parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'early_stopping': True, 'hidden_layer_sizes': (120, 10, 1), 'max_iter': 1000, 'solver': 'adam'}
+
+✅ Modelagem MLPR concluída para todos os atributos!
+
+
+================================================================================
+8. ANÁLISE COMPARATIVA DOS RESULTADOS (MLPR)
+================================================================================
+
+📊 RESULTADOS DO MLPR POR ATRIBUTO
+================================================================================
+
+🔍 AT
+------------------------------------------------------------
+Modelo   Filtro          CV R²           Val R²     Val RMSE   Val MAE   
+------------------------------------------------------------
+MLPR     OPLS2_SNV_SG_D1 0.2846 ± 0.1923 0.1918     0.5923     0.3550    
+
+🔍 FIRMEZA (N)
+------------------------------------------------------------
+Modelo   Filtro          CV R²           Val R²     Val RMSE   Val MAE   
+------------------------------------------------------------
+MLPR     OSC_1           -34.8950 ± 11.3914 -27.2490   517.9385   508.6885  
+
+🔍 PH
+------------------------------------------------------------
+Modelo   Filtro          CV R²           Val R²     Val RMSE   Val MAE   
+------------------------------------------------------------
+MLPR     OSC_1           -7.6186 ± 3.4949 -5.7825    0.6780     0.6261    
+
+🔍 SST
+------------------------------------------------------------
+Modelo   Filtro          CV R²           Val R²     Val RMSE   Val MAE   
+------------------------------------------------------------
+MLPR     OSC_2           -22.0527 ± 4.8069 -19.2532   11.1047    10.8270   
+
+🔍 UBS (%)
+------------------------------------------------------------
+Modelo   Filtro          CV R²           Val R²     Val RMSE   Val MAE   
+------------------------------------------------------------
+MLPR     OSC_2           -24.0116 ± 6.9041 -20.6191   12.2024    11.9168   
+
+🏆 MELHORES FILTROS PARA MLPR POR ATRIBUTO
+============================================================
+AT: OPLS2_SNV_SG_D1 (R² = 0.1918)
+FIRMEZA (N): OSC_1 (R² = -27.2490)
+PH: OSC_1 (R² = -5.7825)
+SST: OSC_2 (R² = -19.2532)
+UBS (%): OSC_2 (R² = -20.6191)
+
+🔬 ANÁLISE DE ROBUSTEZ
+========================================
+
+📈 MLPR:
+  ✅ Vantagens: Aprende relações complexas, Flexível
+  ❌ Desvantagens: Black box, Pode overfitting, Sensível a inicialização
+  💡 Recomendação: Útil para padrões muito complexos
+
+💾 SALVANDO RESULTADOS...
+✅ Resultados salvos em 'resultados_modelagem_mlpr.xlsx'
+
+🎯 RESUMO FINAL
+==============================
+Total de atributos analisados: 5
+Modelo testado: MLPR
+Total de filtros testados: 16
+Melhor filtro por atributo para o MLPR:
+  AT: OPLS2_SNV_SG_D1 (R² = 0.1918)
+  FIRMEZA (N): OSC_1 (R² = -27.2490)
+  PH: OSC_1 (R² = -5.7825)
+  SST: OSC_2 (R² = -19.2532)
+  UBS (%): OSC_2 (R² = -20.6191)
+
+✅ Análise comparativa para MLPR concluída!
+
+================================================================================
+7.4 MODELAGEM - SUPPORT VECTOR MACHINE REGRESSOR (SVMR)
+================================================================================
+
+============================================================
+SVMR PARA AT
+============================================================
+
+--- SVMR com filtro: Detrend ---
+  CV R²: 0.5245 ± 0.1888
+  Val R²: 0.5095, RMSE: 0.4614
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+--- SVMR com filtro: Normalize ---
+  CV R²: 0.5324 ± 0.2656
+  Val R²: 0.4567, RMSE: 0.4856
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+============================================================
+SVMR PARA FIRMEZA (N)
+============================================================
+
+--- SVMR com filtro: EMSC ---
+  CV R²: 0.2380 ± 0.3759
+  Val R²: 0.5469, RMSE: 65.5919
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+--- SVMR com filtro: MSC ---
+  CV R²: 0.2380 ± 0.3759
+  Val R²: 0.5469, RMSE: 65.5919
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+============================================================
+SVMR PARA PH
+============================================================
+
+--- SVMR com filtro: OSC_1 ---
+  CV R²: 0.5618 ± 0.1747
+  Val R²: 0.0598, RMSE: 0.2524
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+--- SVMR com filtro: Detrend ---
+  CV R²: 0.5335 ± 0.1691
+  Val R²: 0.7212, RMSE: 0.1375
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+============================================================
+SVMR PARA SST
+============================================================
+
+--- SVMR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: 0.7944 ± 0.0608
+  Val R²: 0.6988, RMSE: 1.3541
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+--- SVMR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: 0.8003 ± 0.0571
+  Val R²: 0.6647, RMSE: 1.4288
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+============================================================
+SVMR PARA UBS (%)
+============================================================
+
+--- SVMR com filtro: OPLS2_SNV_SG_D1 ---
+  CV R²: 0.8494 ± 0.0323
+  Val R²: 0.7134, RMSE: 1.4050
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'linear'}
+
+--- SVMR com filtro: SNV_Detrend_SG_D1 ---
+  CV R²: 0.8451 ± 0.0437
+  Val R²: 0.7592, RMSE: 1.2877
+  Melhores parâmetros: {'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}
+
+✅ Modelagem SVMR concluída para todos os atributos!
